@@ -8,6 +8,12 @@
 import UIKit
 
 class TextViewController: UIViewController {
+    
+    var selectedCategory: NoteyCategory? {
+        didSet {
+            //loadText()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
