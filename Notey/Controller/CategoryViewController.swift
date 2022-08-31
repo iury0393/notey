@@ -14,6 +14,7 @@ class CategoryViewController: UITableViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!)
         super.viewDidLoad()
         
         loadCategories()

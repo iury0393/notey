@@ -15,14 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="lQa-Ac-BNg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-BB-VbH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="634"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Zq-3wl">
+                                <rect key="frame" x="20" y="765" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="R8M-15-Txp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="Iwq-f3-mSr" eventType="touchUpInside" id="su5-Zj-wrW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oq0-AF-Wyp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oq0-AF-Wyp" firstAttribute="trailing" secondItem="Vdb-Zq-3wl" secondAttribute="trailing" constant="20" id="0a5-gt-U9Q"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="trailing" secondItem="Oq0-AF-Wyp" secondAttribute="trailing" id="Gbj-jh-1gJ"/>
+                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="leading" secondItem="Oq0-AF-Wyp" secondAttribute="leading" constant="20" id="Wr1-dC-ZwP"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="top" secondItem="Oq0-AF-Wyp" secondAttribute="top" id="XwC-Rf-oOu"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="leading" secondItem="Oq0-AF-Wyp" secondAttribute="leading" id="Yq6-rJ-Gfm"/>
+                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="top" secondItem="lsb-BB-VbH" secondAttribute="bottom" constant="43" id="dSr-It-DOC"/>
+                            <constraint firstItem="Oq0-AF-Wyp" firstAttribute="bottom" secondItem="Vdb-Zq-3wl" secondAttribute="bottom" constant="27" id="qvV-yA-bvM"/>
+                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="top" secondItem="lsb-BB-VbH" secondAttribute="bottom" constant="43" id="tub-pY-Nrx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GSq-6e-lua"/>
+                    <connections>
+                        <outlet property="textBox" destination="lsb-BB-VbH" id="5ZA-y6-Of0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGP-uQ-a1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="125"/>
+            <point key="canvasLocation" x="1711.5942028985507" y="124.55357142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mrj-f0-KfA">
@@ -87,6 +123,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
