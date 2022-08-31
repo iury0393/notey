@@ -14,6 +14,7 @@
 		8AACD6B628BE7DD300B01393 /* Notey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6B428BE7DD300B01393 /* Notey.xcdatamodeld */; };
 		8AACD6B828BE7DD300B01393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AACD6B728BE7DD300B01393 /* Assets.xcassets */; };
 		8AACD6BB28BE7DD300B01393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AACD6B928BE7DD300B01393 /* LaunchScreen.storyboard */; };
+		8AACD6C928BF86A500B01393 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6C828BF86A500B01393 /* TextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8AACD6B728BE7DD300B01393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AACD6BA28BE7DD300B01393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AACD6BC28BE7DD300B01393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AACD6C828BF86A500B01393 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				8AACD6AF28BE7DD300B01393 /* CategoryViewController.swift */,
+				8AACD6C828BF86A500B01393 /* TextViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AACD6C928BF86A500B01393 /* TextViewController.swift in Sources */,
 				8AACD6B028BE7DD300B01393 /* CategoryViewController.swift in Sources */,
 				8AACD6B628BE7DD300B01393 /* Notey.xcdatamodeld in Sources */,
 				8AACD6AC28BE7DD300B01393 /* AppDelegate.swift in Sources */,
