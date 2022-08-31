@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8AACD6AC28BE7DD300B01393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6AB28BE7DD300B01393 /* AppDelegate.swift */; };
 		8AACD6AE28BE7DD300B01393 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6AD28BE7DD300B01393 /* SceneDelegate.swift */; };
-		8AACD6B028BE7DD300B01393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6AF28BE7DD300B01393 /* ViewController.swift */; };
+		8AACD6B028BE7DD300B01393 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6AF28BE7DD300B01393 /* CategoryViewController.swift */; };
 		8AACD6B328BE7DD300B01393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AACD6B128BE7DD300B01393 /* Main.storyboard */; };
 		8AACD6B628BE7DD300B01393 /* Notey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AACD6B428BE7DD300B01393 /* Notey.xcdatamodeld */; };
 		8AACD6B828BE7DD300B01393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AACD6B728BE7DD300B01393 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		8AACD6A828BE7DD300B01393 /* Notey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AACD6AB28BE7DD300B01393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AACD6AD28BE7DD300B01393 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AACD6AF28BE7DD300B01393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AACD6AF28BE7DD300B01393 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		8AACD6B228BE7DD300B01393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AACD6B528BE7DD300B01393 /* Notey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notey.xcdatamodel; sourceTree = "<group>"; };
 		8AACD6B728BE7DD300B01393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,14 +60,46 @@
 			children = (
 				8AACD6AB28BE7DD300B01393 /* AppDelegate.swift */,
 				8AACD6AD28BE7DD300B01393 /* SceneDelegate.swift */,
-				8AACD6AF28BE7DD300B01393 /* ViewController.swift */,
-				8AACD6B128BE7DD300B01393 /* Main.storyboard */,
-				8AACD6B728BE7DD300B01393 /* Assets.xcassets */,
-				8AACD6B928BE7DD300B01393 /* LaunchScreen.storyboard */,
+				8AACD6C528BF84B300B01393 /* Model */,
+				8AACD6C328BF849800B01393 /* View */,
+				8AACD6C228BF848D00B01393 /* Controller */,
+				8AACD6C428BF84A100B01393 /* Utils */,
 				8AACD6BC28BE7DD300B01393 /* Info.plist */,
-				8AACD6B428BE7DD300B01393 /* Notey.xcdatamodeld */,
 			);
 			path = Notey;
+			sourceTree = "<group>";
+		};
+		8AACD6C228BF848D00B01393 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AACD6AF28BE7DD300B01393 /* CategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8AACD6C328BF849800B01393 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AACD6B128BE7DD300B01393 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AACD6C428BF84A100B01393 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8AACD6B728BE7DD300B01393 /* Assets.xcassets */,
+				8AACD6B928BE7DD300B01393 /* LaunchScreen.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8AACD6C528BF84B300B01393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AACD6B428BE7DD300B01393 /* Notey.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AACD6B028BE7DD300B01393 /* ViewController.swift in Sources */,
+				8AACD6B028BE7DD300B01393 /* CategoryViewController.swift in Sources */,
 				8AACD6B628BE7DD300B01393 /* Notey.xcdatamodeld in Sources */,
 				8AACD6AC28BE7DD300B01393 /* AppDelegate.swift in Sources */,
 				8AACD6AE28BE7DD300B01393 /* SceneDelegate.swift in Sources */,

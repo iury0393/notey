@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NoteyCategory" representedClassName=".NoteyCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="noteyCatText" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteyText" inverseName="noteyTextCat" inverseEntity="NoteyText"/>
+    </entity>
+    <entity name="NoteyText" representedClassName=".NoteyText" syncable="YES" codeGenerationType="class">
+        <attribute name="text" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="noteyTextCat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteyCategory" inverseName="noteyCatText" inverseEntity="NoteyCategory"/>
+    </entity>
+    <elements>
+        <element name="NoteyCategory" positionX="-54" positionY="-9" width="128" height="88"/>
+        <element name="NoteyText" positionX="114.58203125" positionY="-7.3203125" width="128" height="88"/>
+    </elements>
+</model>
