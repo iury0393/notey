@@ -48,12 +48,6 @@ class TextViewController: UIViewController {
             print("Error fetching context: \(error)")
         }
     }
-    @IBAction func saveButtonPressed(_ sender: UIButton) {
-        let newText = NoteyText(context: context)
-        newText.text = textBox.text
-        newText.noteyTextCat = selectedCategory
-        saveText()
-    }
 }
 //MARK: - UITextViewDelegate
 
@@ -79,5 +73,13 @@ extension TextViewController: UITextViewDelegate {
         textBox.layer.shadowOpacity = 0.4
         textBox.layer.shadowRadius = 20
         textBox.layer.masksToBounds = false
+    }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        let newText = NoteyText(context: context)
+        newText.text = textBox.text
+        newText.noteyTextCat = selectedCategory
+        saveText()
+        return true
     }
 }

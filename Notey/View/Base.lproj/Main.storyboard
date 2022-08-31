@@ -17,38 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-BB-VbH">
-                                <rect key="frame" x="0.0" y="88" width="414" height="634"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-Zq-3wl">
-                                <rect key="frame" x="20" y="765" width="374" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="R8M-15-Txp"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Save">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="saveButtonPressed:" destination="Iwq-f3-mSr" eventType="touchUpInside" id="su5-Zj-wrW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Oq0-AF-Wyp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Oq0-AF-Wyp" firstAttribute="trailing" secondItem="Vdb-Zq-3wl" secondAttribute="trailing" constant="20" id="0a5-gt-U9Q"/>
-                            <constraint firstItem="lsb-BB-VbH" firstAttribute="trailing" secondItem="Oq0-AF-Wyp" secondAttribute="trailing" id="Gbj-jh-1gJ"/>
-                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="leading" secondItem="Oq0-AF-Wyp" secondAttribute="leading" constant="20" id="Wr1-dC-ZwP"/>
-                            <constraint firstItem="lsb-BB-VbH" firstAttribute="top" secondItem="Oq0-AF-Wyp" secondAttribute="top" id="XwC-Rf-oOu"/>
-                            <constraint firstItem="lsb-BB-VbH" firstAttribute="leading" secondItem="Oq0-AF-Wyp" secondAttribute="leading" id="Yq6-rJ-Gfm"/>
-                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="top" secondItem="lsb-BB-VbH" secondAttribute="bottom" constant="43" id="dSr-It-DOC"/>
-                            <constraint firstItem="Oq0-AF-Wyp" firstAttribute="bottom" secondItem="Vdb-Zq-3wl" secondAttribute="bottom" constant="27" id="qvV-yA-bvM"/>
-                            <constraint firstItem="Vdb-Zq-3wl" firstAttribute="top" secondItem="lsb-BB-VbH" secondAttribute="bottom" constant="43" id="tub-pY-Nrx"/>
+                            <constraint firstItem="Oq0-AF-Wyp" firstAttribute="bottom" secondItem="lsb-BB-VbH" secondAttribute="bottom" id="LND-nJ-P9N"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="top" secondItem="Oq0-AF-Wyp" secondAttribute="top" id="P1E-Bw-lOd"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="leading" secondItem="Oq0-AF-Wyp" secondAttribute="leading" id="WFw-hp-qhj"/>
+                            <constraint firstItem="lsb-BB-VbH" firstAttribute="trailing" secondItem="Oq0-AF-Wyp" secondAttribute="trailing" id="vMK-hR-f1g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GSq-6e-lua"/>
